@@ -13,18 +13,18 @@
  */
 
 return [
-    'listen' => 'http://0.0.0.0:8787',
-    'transport' => 'tcp',
-    'context' => [],
-    'name' => 'webman',
-    'count' => cpu_count() * 2,
-    'user' => '',
-    'group' => '',
-    'reusePort' => false,
-    'event_loop' => '',
-    'pid_file' => runtime_path() . '/webman.pid',
-    'status_file' => runtime_path() . '/webman.status',
-    'stdout_file' => runtime_path() . '/logs/stdout.log',
-    'log_file' => runtime_path() . '/logs/workerman.log',
+    'listen'           => 'http://0.0.0.0:9501',
+    'transport'        => 'tcp',
+    'context'          => [],
+    'name'             => 'webman',
+    'count'            => cpu_count() * 2,
+    'user'             => '',
+    'group'            => '',
+    'reusePort'        => false,
+    'event_loop'       => '',
+    'pid_file'         => runtime_path() . '/webman.pid',
+    'status_file'      => runtime_path() . '/webman.status',
+    'stdout_file'      => runtime_path() . '/logs/stdout.log',
+    'log_file'         => runtime_path() . '/logs/workerman.log',
     'max_package_size' => 10 * 1024 * 1024
 ];
